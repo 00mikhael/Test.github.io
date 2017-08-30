@@ -1,92 +1,186 @@
-# The Midnight theme
+[![Build Status](https://travis-ci.org/k0shk0sh/FastHub.svg?branch=master)](https://travis-ci.org/k0shk0sh/FastHub) [![Build status](https://ci.appveyor.com/api/projects/status/2yhxx7hu6hju24bk?svg=true)](https://ci.appveyor.com/project/k0shk0sh/fasthub)
+[![Releases](https://img.shields.io/github/release/k0shk0sh/FastHub.svg)](https://github.com/k0shk0sh/FastHub/releases/latest) [![Slack](https://img.shields.io/badge/slack-join-e01563.svg)](http://rebrand.ly/fasthub)
 
-[![Build Status](https://travis-ci.org/pages-themes/midnight.svg?branch=master)](https://travis-ci.org/pages-themes/midnight) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-midnight.svg)](https://badge.fury.io/rb/jekyll-theme-midnight)
+![Logo](/.github/assets/feature_graphic.png?raw=true "Logo")
 
-*Midnight is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/midnight), or even [use it today](#usage).*
+# FastHub  
 
-![Thumbnail of midnight](thumbnail.png)
+Yet another **open-source** GitHub client app but unlike any other app, FastHub was built from scratch.  
+<!--
+[<img src="https://f-droid.org/badge/get-it-on.png"
+      alt="Get it on F-Droid"
+      height="80">](https://f-droid.org/repository/browse/?fdid=com.fastaccess.github)
+-->
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+      alt="Download from Google Play"
+      height="80">](https://play.google.com/store/apps/details?id=com.fastaccess.github)
+[<img src=".github/assets/direct-apk-download.png"
+      alt="Direct apk download"
+      height="80">](https://github.com/k0shk0sh/FastHub/releases/latest)
 
-## Usage
+#### Snapshots / Test builds
 
-To use the Midnight theme:
+We have configured snapshots of FastHub, which can be downloaded from [AppVeyor CI](https://ci.appveyor.com/project/k0shk0sh/fasthub/build/artifacts).
 
-1. Add the following to your site's `_config.yml`:
+# Features  
+- **App**
+  - Three login types (Basic Auth), (Access Token) or via (OAuth)
+  - Multiple Accounts
+  - Enterprise Accounts
+  - Themes mode
+  - Offline-mode
+  - Markdown and code highlighting support
+  - Notifications overview and "Mark all as read"
+  - Search users/orgs, repos, issues/prs & code.
+  - FastHub & GitHub Pinned Repos
+  - Trending
+  - Wiki
+- **Repositories**
+  - Browse & Read Wiki
+  - Search Repos
+  - Browse and search Repos
+  - See your public, private and forked Repos
+  - Filter Branches and Commits
+  - Watch, star and fork Repos
+  - Download releases, files and branches
+- **Issues and Pull Requests**
+  - Search Issues/PRs
+  - Filter Issues/PRs
+  - Long click to peak Issues/PRs & add comments otg.
+  - Open/close Issues/PRs
+  - Comment on Issues/PRs
+  - Manage Issue/PR comments
+  - React to comments with reactions
+  - Edit Issues/PRs
+  - Lock/unlock conversation in Issues/PRs
+  - Assign people and add Labels and Milestones to Issues/PRs
+  - Manage Milestones
+  - Merge PRs
+  - PRs reviews (reply, react with emojies, delete & edit comment)
+  - PRs request review changes/approve & comment.
+  - PRs statuses
+- **Commits and Gists**
+  - Search Code/Gists
+  - View Gists and their files
+  - Comment on Commits/Gists
+  - Manage Commit/Gist comments
+  - Create/Delete Gists
+  - Edit Gist & Gist Files
+  - React to Commit comments with reactions
+  - Comment on line number in Files/Code changes.
+- **Orgs**
+    - Overview
+    - Feeds
+    - Teams & Teams repos
+    - Repos
+- **Users**
+  - GitHub Pinned Repos 
+  - Follow/Unfollow users
+  - View user feeds
+  - Contribution graph.
+  - Search Users, Repos, Issues,Pull Requests and Code
+- _**Much more...**_
+  - _FastHub is actively developed. More features will come!_
 
-    ```yml
-    theme: jekyll-theme-midnight
-    ```
+~~> **FastHub** contain Ads, which are disabled by default. You could enable them if you'd like to support the development.~~  
+_Ads currently not available._
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+## Specs / Open-source libraries:
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+- Minimum **SDK 21**, _but AppCompat is used all the way ;-)_
+- **Kotlin** all new modules starting from 2.5.3 will be written in **#Kotlin**.
+- **MVP**-architecture: [**ThirtyInch**](https://github.com/grandcentrix/ThirtyInch) because its ThirtyInch.
+- [**RxJava2**](https://github.com/ReactiveX/RxJava) & [**RxAndroid**](https://github.com/ReactiveX/RxAndroid) for Retrofit & background threads
+- [**Retrofit**](https://github.com/square/retrofit) for constructing the REST API
+- [**Requery**](https://github.com/requery/requery/) for offline-mode
+- [**Stream API**](https://github.com/aNNiMON/Lightweight-Stream-API) for dealing with `Collections`
+- [**ButterKnife**](https://github.com/JakeWharton/butterknife) for view binding
+- [**Android State**](https://github.com/evernote/android-state) for saving instance states
+- [**Lombok**](https://projectlombok.github.io) for getters and setters
+- [**Material-BottomNavigation**](https://github.com/sephiroth74/Material-BottomNavigation) for `BottomBar` tabs
+- [**Glide**](https://github.com/bumptech/glide) for loading images
+- [**commonmark**](https://github.com/atlassian/commonmark-java) for _Markdown_ conversion to html
+- [**Toasty**](https://github.com/GrenderG/Toasty) for displaying error/success messages
+- [**ShapedImageView**](https://github.com/gavinliu/ShapedImageView) for round avatars
+- [**Material-About-Library**](https://github.com/daniel-stoneuk/material-about-library) for the about screen
+- **Fabric** analytics & crash reporting.
+- **Android Support Libraries**, the almighty ;-)
+
+## Contribution
+
+You love FastHub? You want new features or bug fixes?  
+Please **contribute** to the  project either by [_creating a PR_](https://github.com/k0shk0sh/FastHub/compare) or [_submitting an issue_](https://github.com/k0shk0sh/FastHub/issues/new) on GitHub.  
+Read the [**contribution guide**](.github/CONTRIBUTING.md) for more detailed information.
+
+## Language Contributors
+
+<details>
+  <summary>Thanks for those who contributed to FastHub by adding their language</summary>
+  <p>- Chinese (Simplified) <a href="https://github.com/devifish">@Devifish</a></p>
+  <p>- Chinese (Traditional) <a href="https://github.com/maple3142">@maple3142</a></p>
+  <p>- German <a href="https://github.com/failex234">@failex234</a></p>
+  <p>- Indonesian <a href="https://github.com/dikiaap">@dikiaap</a></p>
+  <p>- Italian <a href="https://github.com/Raffaele74">@Raffaele74</a></p>
+  <p>- Japanese <a href="https://github.com/Rintan">@Rintan</a></p>
+  <p>- Lithuanian <a href="https://github.com/mistermantas">@mistermantas</a></p>
+  <p>- Russian <a href="https://github.com/dedepete">@dedepete</a></p>
+  <p>- Turkish <a href="https://github.com/kutsan">@kutsan</a></p>
+  <p>- Portuguese <a href="https://github.com/caiorrs">@caiorrs</a></p>
+  <p>- Czech <a href="https://github.com/hejsekvojtech">@hejsekvojtech</a></p>
+  <p>- Spanish <a href="https://github.com/alete89">@alete89</a></p>
+  <p>- French <a href="https://github.com/ptt-homme">@ptt-homme</a></p>
+</details>
+
+## FAQ
+
+<details>
+  <summary>Why can't I see my <b>Organizations</b> either <i>Private</i> or <i>Public</i> ones?</summary>
+  <p>Open up https://github.com/settings/applications and look for FastHub, open it then scroll to Organization access and click on Grant Button,
+  alternatively login via <b>Access Token</b> which will ease this setup.</p>
+</details>
+
+<details>
+  <summary>I tried to login via Access Token & OTP but it does not work?</summary>
+  <p>You can't login via Access Token & OTP all together due to the lifetime of the OTP code, you'll be required to login in every few seconds.</p>
+</details>
+
+<details>
+  <summary>Why my Private Repo Wiki does not show up?</summary>
+  <p>It's due to FastHub scraping GitHub Wiki page & Private Repos require session token that FastHub doesn't have.</p>
+</details>
+
+<details>
+  <summary>I login with Enterprise account but can't interact with anything other than my Enterprise GitHub</summary>
+  <p>Well, logically, you can't access anything else other than your Enterprise, but FastHub made that possible but can't do much about it,
+  in most cases since your login credential doesn't exists in GitHub server. But in <b>few</b>
+  cases your GitHub account Oauth token will do the trick.</p>
+
+</details>
 
 
+## License
 
-## Customizing
+> Copyright (C) 2017 Kosh.  
+> Licensed under the [GPL-3.0](https://www.gnu.org/licenses/gpl.html) license.  
+> (See the [LICENSE](https://github.com/k0shk0sh/FastHub/blob/master/LICENSE) file for the whole license text.)
 
-### Configuration variables
+## Screenshots
 
-Midnight will respect the following variables, if set in your site's `_config.yml`:
+| Feeds | Drawer |
+|:-:|:-:|
+| ![First](/.github/assets/first.png?raw=true) | ![Sec](/.github/assets/sec.png?raw=true) |
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
+| Repo | Profile |
+|:-:|:-:|
+| ![Third](/.github/assets/third.png?raw=true) | ![Fourth](/.github/assets/fourth.png?raw=true) |
 
-Additionally, you may choose to set the following optional variables:
+## FastHub Logo
 
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
+**FastHub** logo is designed by **Cookicons**.  
+[Google+](https://plus.google.com/+CookiconsDesign) | [Twitter](https://twitter.com/mcookie)  
+Designer website [Cookicons](https://cookicons.co/).  
 
-### Stylesheet
-
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
-
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
-
-### Layouts
-
-If you'd like to change the theme's HTML layout:
-
-1. [Copy the original template](https://github.com/pages-themes/midnight/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
-
-## Roadmap
-
-See the [open issues](https://github.com/pages-themes/midnight/issues) for a list of proposed features (and known issues).
-
-## Project philosophy
-
-The Midnight theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
-
-## Contributing
-
-Interested in contributing to Midnight? We'd love your help. Midnight is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](CONTRIBUTING.md) for instructions on how to contribute.
-
-### Previewing the theme locally
-
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/midnight`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+**OLD FastHub** logo was designed by **Kevin Aguilar**.  
+[Google+](https://plus.google.com/+KevinAguilarC) | [Twitter](https://twitter.com/kevttob)  
+Designer at [221 Pixels](https://www.221pixels.com/).  
+Laus Deo Semper
